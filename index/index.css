@@ -47,7 +47,7 @@ body {
 }
 
 .content {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7);
     margin: 0px 700px 10px 700px;
     height: 400px;
     outline: 2px solid white;
