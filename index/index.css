@@ -1,0 +1,78 @@
+body {
+    background-image: url(./imgs/cloudyImg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 40px 700px 0px 700px;
+    outline: 2px solid black;
+    border-radius: 5px 5px;
+}
+
+.title h1 {
+    margin-right: 10px;
+}
+
+.title img {
+    width: 210px;
+    height: 75px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 0px;
+    margin: 10px 750px 10px 750px;
+    flex-wrap: wrap;
+    outline: 2px solid black;
+    border-radius: 10px 10px;
+}
+
+.search h3 {
+    margin-right: 10px;
+}
+
+.search input {
+    margin-right: 10px;
+}
+
+.content {
+    background-color: black;
+    margin: 0px 700px 10px 700px;
+    height: 400px;
+    outline: 2px solid white;
+    border-radius: 10px 10px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs button {
+    outline: 2px solid black;
+    margin: 0 5px;
+}
+
+.alerts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.alerts button {
+    outline: 2px solid black;
+    width: 19.6%;
+}
