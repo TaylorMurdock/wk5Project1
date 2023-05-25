@@ -14,4 +14,4 @@
 
 
 ## **Wire Frames**
-![layout of the app](imgs/wireframe1.png)
+![layout of the app](index/imgs/wireframe1.png)
