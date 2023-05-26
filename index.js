@@ -8,7 +8,6 @@ $(document).ready(function () {
     }
 
     $(this).addClass("highlight");
-
     lastClickedTab = $(this);
   });
 
@@ -17,8 +16,10 @@ $(document).ready(function () {
 
     if (alertsOpen) {
       $(".alerts").addClass("open");
+      $(this).addClass("highlight");
     } else {
       $(".alerts").removeClass("open");
+      $(this).removeClass("highlight");
     }
   });
 });
