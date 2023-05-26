@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 
 }
 
@@ -52,6 +53,7 @@ body {
     height: 400px;
     outline: 2px solid white;
     border-radius: 10px 10px;
+    color: white;
 }
 
 .tabs {
@@ -65,14 +67,39 @@ body {
     margin: 0 5px;
 }
 
+.tabs button.highlight {
+    background-color: yellow;
+    color: black;
+}
+
 .alerts {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    position: relative;
 }
 
 .alerts button {
     outline: 2px solid black;
     width: 19.6%;
+    margin-bottom: 10px;
+}
+
+#alertContent {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0px 700px 10px 700px;
+    height: 300px;
+    width: 40%;
+    outline: 2px solid white;
+    border-radius: 10px 10px;
+    display: none;
+    color: white;
+}
+
+.alerts.open #alertContent {
+    height: 200px;
+    bottom: 0;
+    display: block;
 }
