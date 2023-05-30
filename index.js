@@ -25,7 +25,7 @@ $(document).ready(function () {
 });
 
 const currentWeatherUrl =
-  "https://api.openweathermap.org/data/2.5/weather?lat=35.5951&lon=82.5515&appid=20c52dcce61a134a5c6deb567556e70c";
+  "https://api.openweathermap.org/data/2.5/weather?lat=35.590310&lon=-82.487800&appid=20c52dcce61a134a5c6deb567556e70c&units=imperial";
 
 fetch(currentWeatherUrl)
   .then((response) => {
@@ -33,8 +33,23 @@ fetch(currentWeatherUrl)
     return response.json();
   })
   .then((data) => {
-    console.log(data.main);
+    console.log();
+    const weather = data.main;
 
     const content = $(".content");
     // console.log(content);
+    content.html(`
+    <div class="curTemp">
+    <b>Current Temperature:&nbsp;</b> ${weather.temp}
+    </div>
+     <div>
+    <b>Feels Like:&nbsp;</b>${weather.feels_like}
+    </div>
+     <div>
+     <b>Low for the day:&nbsp;</b>${weather.temp_min}
+    </div>
+         <div>
+     <b>High for the day:&nbsp;</b>${weather.temp_max}
+    </div>
+    `);
   });
