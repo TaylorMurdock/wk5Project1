@@ -49,17 +49,19 @@ body {
 
 .content {
     background-color: rgba(0, 0, 0, 0.7);
-    margin: 0px 700px 10px 700px;
     height: 400px;
     outline: 2px solid white;
     border-radius: 10px 10px;
     color: white;
+    width: 400px;
+    margin: 0 auto;
 }
 
 .tabs {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 .tabs button {
@@ -107,4 +109,28 @@ body {
     height: 200px;
     bottom: 0;
     display: block;
+}
+
+.curTemp {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: larger;
+}
+
+.curFeelsLike {
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: larger;
+}
+
+.curLow {
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: larger;
+}
+
+.curHigh {
+    text-align: center;
+    font-size: larger;
 }
