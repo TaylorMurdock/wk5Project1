@@ -141,3 +141,37 @@ body {
     text-align: center;
     font-size: larger;
 }
+
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+
+    .title,
+    .search {
+        margin: 40px 10px 0;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    #alertContent {
+        margin: 0px 20px 10px 20px;
+        width: 100%;
+    }
+
+    body {
+        background-size: cover;
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+
+    .tabs button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .alerts button {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -8,7 +8,6 @@ $(document).ready(function () {
   var alertsOpen = false;
   var lastClickedTab = null;
 
-  // on document load, before any tabs clicked, add highlight to first button (current weather)
   $(".tabs button").eq(0).addClass("highlight");
 
   $(".tabs button").click(function () {
@@ -104,7 +103,7 @@ $(document).ready(function () {
           const currentTime = Math.floor(Date.now() / 1000);
 
           if (currentTime < time.sunrise || currentTime > time.sunset) {
-            body.css("background-image", nightImgPath); // need to fix
+            body.css("background-image", nightImgPath);
           } else if (weatherDesc === "Clouds") {
             body.css("background-image", cloudImgPath);
           } else if (weatherDesc === "Rain") {
@@ -181,9 +180,7 @@ $(document).ready(function () {
                   weatherDesc !== "Clouds"
                 ) {
                   body.css("background-image", sunnyImgPath);
-                } // else if (time less than sunrise OR time greater than sunset) {
-                //   body.css("background-image", nightImgPath); // need to fix
-                // }
+                }
               }
 
               changeBackgroundImg(weatherDesc);
@@ -233,7 +230,7 @@ fetch(defaultCurrentWeatherUrl)
       const currentTime = Math.floor(Date.now() / 1000);
 
       if (currentTime < time.sunrise || currentTime > time.sunset) {
-        body.css("background-image", nightImgPath); // need to fix
+        body.css("background-image", nightImgPath);
       } else if (weatherDesc === "Clouds") {
         body.css("background-image", cloudImgPath);
       } else if (weatherDesc === "Rain") {
