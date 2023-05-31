@@ -49,7 +49,7 @@ body {
 
 .content {
     background-color: rgba(0, 0, 0, 0.7);
-    height: 400px;
+    height: 300px;
     outline: 2px solid white;
     border-radius: 10px 10px;
     color: white;
@@ -67,6 +67,7 @@ body {
 .tabs button {
     outline: 2px solid black;
     margin: 0 5px;
+    width: 9.55%;
 }
 
 .tabs button.highlight {
@@ -112,7 +113,6 @@ body {
 }
 
 .curTemp {
-    padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
     font-size: larger;
@@ -131,6 +131,13 @@ body {
 }
 
 .curHigh {
+    text-align: center;
+    font-size: larger;
+}
+
+.cityName {
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
     font-size: larger;
 }
