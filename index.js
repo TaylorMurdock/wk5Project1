@@ -101,7 +101,7 @@ $(document).ready(function () {
     `);
         // Updates the content section with the current weather data
 
-        changeBackgroundImg(weatherDesc); // Calls the function to change the background image based on the weather description
+        changeBackgroundImg(weatherDesc, time); // Calls the function to change the background image based on the weather description
       });
   });
 
@@ -149,7 +149,7 @@ $(document).ready(function () {
               `);
               // Updates the content section with the current weather data
 
-              changeBackgroundImg(weatherDesc); // Calls the function to change the background image based on the weather description
+              changeBackgroundImg(weatherDesc, time); // Calls the function to change the background image based on the weather description
             });
         });
     };
@@ -192,9 +192,9 @@ fetch(defaultCurrentWeatherUrl)
     `);
     // Updates the content section with the current weather data
 
-    changeBackgroundImg(weatherDesc); // Calls the function to change the background image based on the weather description
+    changeBackgroundImg(weatherDesc, time); // Calls the function to change the background image based on the weather description
   });
-function changeBackgroundImg(weatherDesc) {
+function changeBackgroundImg(weatherDesc, time) {
   const body = $("body"); // Selects the body element
   const currentTime = Math.floor(Date.now() / 1000); // Retrieves the current time
 
