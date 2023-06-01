@@ -101,27 +101,6 @@ $(document).ready(function () {
     `);
         // Updates the content section with the current weather data
 
-        function changeBackgroundImg(weatherDesc) {
-          const body = $("body"); // Selects the body element
-          const currentTime = Math.floor(Date.now() / 1000); // Gets the current time
-
-          if (currentTime < time.sunrise || currentTime > time.sunset) {
-            body.css("background-image", nightImgPath); // Sets the background image to the night image if it's nighttime
-          } else if (weatherDesc === "Clouds") {
-            body.css("background-image", cloudImgPath); // Sets the background image to the cloudy image if it's cloudy
-          } else if (weatherDesc === "Rain") {
-            body.css("background-image", rainImgPath); // Sets the background image to the raining image if it's raining
-          } else if (weatherDesc === "Snow") {
-            body.css("background-image", snowImgPath); // Sets the background image to the snow image if it's snowing
-          } else if (
-            weatherDesc !== "Rain" &&
-            weatherDesc !== "Snow" &&
-            weatherDesc !== "Clouds"
-          ) {
-            body.css("background-image", sunnyImgPath); // Sets the background image to the sunny image if it's clear weather
-          }
-        }
-
         changeBackgroundImg(weatherDesc); // Calls the function to change the background image based on the weather description
       });
   });
@@ -170,24 +149,6 @@ $(document).ready(function () {
               `);
               // Updates the content section with the current weather data
 
-              function changeBackgroundImg(weatherDesc) {
-                const body = $("body"); // Selects the body element
-
-                if (weatherDesc === "Clouds") {
-                  body.css("background-image", cloudImgPath); // Sets the background image to the cloudy image if it's cloudy
-                } else if (weatherDesc === "Rain") {
-                  body.css("background-image", rainImgPath); // Sets the background image to the raining image if it's raining
-                } else if (weatherDesc === "Snow") {
-                  body.css("background-image", snowImgPath); // Sets the background image to the snow image if it's snowing
-                } else if (
-                  weatherDesc !== "Rain" &&
-                  weatherDesc !== "Snow" &&
-                  weatherDesc !== "Clouds"
-                ) {
-                  body.css("background-image", sunnyImgPath); // Sets the background image to the sunny image if it's clear weather
-                }
-              }
-
               changeBackgroundImg(weatherDesc); // Calls the function to change the background image based on the weather description
             });
         });
@@ -231,26 +192,25 @@ fetch(defaultCurrentWeatherUrl)
     `);
     // Updates the content section with the current weather data
 
-    function changeBackgroundImg(weatherDesc) {
-      const body = $("body"); // Selects the body element
-      const currentTime = Math.floor(Date.now() / 1000); // Retrieves the current time
-
-      if (currentTime < time.sunrise || currentTime > time.sunset) {
-        body.css("background-image", nightImgPath); // Sets the background image to the night image if it's nighttime
-      } else if (weatherDesc === "Clouds") {
-        body.css("background-image", cloudImgPath); // Sets the background image to the cloudy image if it's cloudy
-      } else if (weatherDesc === "Rain") {
-        body.css("background-image", rainImgPath); // Sets the background image to the raining image if it's raining
-      } else if (weatherDesc === "Snow") {
-        body.css("background-image", snowImgPath); // Sets the background image to the snow image if it's snowing
-      } else if (
-        weatherDesc !== "Rain" &&
-        weatherDesc !== "Snow" &&
-        weatherDesc !== "Clouds"
-      ) {
-        body.css("background-image", sunnyImgPath); // Sets the background image to the sunny image if it's clear weather
-      }
-    }
-
     changeBackgroundImg(weatherDesc); // Calls the function to change the background image based on the weather description
   });
+function changeBackgroundImg(weatherDesc) {
+  const body = $("body"); // Selects the body element
+  const currentTime = Math.floor(Date.now() / 1000); // Retrieves the current time
+
+  if (currentTime < time.sunrise || currentTime > time.sunset) {
+    body.css("background-image", nightImgPath); // Sets the background image to the night image if it's nighttime
+  } else if (weatherDesc === "Clouds") {
+    body.css("background-image", cloudImgPath); // Sets the background image to the cloudy image if it's cloudy
+  } else if (weatherDesc === "Rain") {
+    body.css("background-image", rainImgPath); // Sets the background image to the raining image if it's raining
+  } else if (weatherDesc === "Snow") {
+    body.css("background-image", snowImgPath); // Sets the background image to the snow image if it's snowing
+  } else if (
+    weatherDesc !== "Rain" &&
+    weatherDesc !== "Snow" &&
+    weatherDesc !== "Clouds"
+  ) {
+    body.css("background-image", sunnyImgPath); // Sets the background image to the sunny image if it's clear weather
+  }
+}
