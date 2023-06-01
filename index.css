@@ -213,9 +213,14 @@ body {
 @media (min-width: 1025px) {
 
     /* Media query for screens with a minimum width of 1025px (large devices) */
-    .title,
+    .title {
+        margin: 40px auto;
+        width: 400px;
+    }
+
     .search {
-        margin: 40px 700px 20px 700px;
+        margin: 10px auto;
+        width: 400px;
     }
 
     .content {
@@ -224,7 +229,7 @@ body {
     }
 
     #alertContent {
-        margin: 0px 700px 10px 700px;
-        width: 40%;
+        margin: 0px auto;
+        width: 400px;
     }
 }
