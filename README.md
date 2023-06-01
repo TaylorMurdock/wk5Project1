@@ -14,4 +14,4 @@
 
 
 ## **Wire Frames**
-![layout of the app](index/imgs/wireframe1.png)
+![layout of the app](/Users/taylormurdock/Desktop/GA Coding/unit1/week5/Skysense/imgs/wireframe1.png)
