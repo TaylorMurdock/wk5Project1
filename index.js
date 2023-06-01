@@ -131,7 +131,7 @@ $(document).ready(function () {
 
     const convertZipAndChangeTemp = (zip) => {
       fetch(
-        `http://api.openweathermap.org/geo/1.0/zip?zip=${zip}&appid=20c52dcce61a134a5c6deb567556e70c`
+        `https://api.openweathermap.org/geo/1.0/zip?zip=${zip}&appid=20c52dcce61a134a5c6deb567556e70c`
       )
         .then((response) => {
           return response.json(); // Returns the response as JSON

@@ -142,7 +142,11 @@ body {
     font-size: larger;
 }
 
+
 @media (max-width: 576px) {
+    h1 {
+        font-size: 1.5em;
+    }
 
     /* Media query for screens with a maximum width of 576px (extra small devices) */
     .title,
