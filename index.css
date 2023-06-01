@@ -142,12 +142,12 @@ body {
     font-size: larger;
 }
 
-/* Extra small devices (phones) */
 @media (max-width: 576px) {
 
+    /* Media query for screens with a maximum width of 576px (extra small devices) */
     .title,
     .search {
-        margin: 40px 10px 0;
+        margin: 40px 10px 20px;
     }
 
     .content {
@@ -176,12 +176,12 @@ body {
     }
 }
 
-/* Small and medium devices (tablets and laptops) */
 @media (min-width: 577px) and (max-width: 1024px) {
 
+    /* Media query for screens with a minimum width of 577px and maximum width of 1024px (small to medium devices) */
     .title,
     .search {
-        margin: 40px 10px 0;
+        margin: 40px 10px 20px;
     }
 
     .content {
@@ -207,5 +207,24 @@ body {
     .alerts button {
         width: 100%;
         text-align: center;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    /* Media query for screens with a minimum width of 1025px (large devices) */
+    .title,
+    .search {
+        margin: 40px 700px 20px 700px;
+    }
+
+    .content {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    #alertContent {
+        margin: 0px 700px 10px 700px;
+        width: 40%;
     }
 }
